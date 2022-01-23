@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* CSS Variables
+   https://www.w3schools.com/css/css3_variables.asp
+*/
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #e3f9ff;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #e3f9ff;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.container {
+    margin-top: 20px;
+    align-self: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 100px 100px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+p {
+    margin: 0 100px 100px;
+    text-align: center;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-control label {
+    color: #000000;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    /* bottom: 0;*/
+    left: 0;
+    visibility: hidden;
+    font-size: .75rem;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 50%;
+}
+.paige-container {
+    min-height: 100vh;
+}
+footer {
+    padding-top: 20px;
+    margin-top: 20px;
+    border: 2px #333333 solid;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+#confirm {
+    position: absolute;
+    bottom: 0px;
+}
